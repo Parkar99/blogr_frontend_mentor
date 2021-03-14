@@ -1,0 +1,29 @@
+name: blogr
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter_hooks: ^0.16.0
+  flutter_svg: ^0.21.0-nullsafety.0 # Latest
+  get: ^4.0.0-nullsafety.2 # Lastest
+  google_fonts: ^2.0.0
+
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  lint: ^1.5.3
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
