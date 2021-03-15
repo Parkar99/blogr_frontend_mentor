@@ -12,4 +12,4 @@ jobs:
     name: Flutter build
     steps:
       - name: Flutter build
-        uses: subosito/flutter-action@v1.4.0
+        uses: jddeep/Flutter-Runner@1.2.0
