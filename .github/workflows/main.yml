@@ -12,4 +12,4 @@ jobs:
     name: Flutter build
     steps:
       - name: Flutter build
-        uses: Techno-Disaster/Flutter-Mate@v1.0.0
+        uses: subosito/flutter-action@v1.4.0
