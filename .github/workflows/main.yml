@@ -18,3 +18,11 @@ jobs:
       - uses: subosito/flutter-action@v1
       - run: flutter pub get
       - run: flutter build web
+      - uses: nwtgck/actions-netlify@v1.1
+        with:
+          publish-dir: './build/web'
+          production-branch: master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
