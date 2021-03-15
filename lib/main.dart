@@ -1,6 +1,7 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html';
 
+import 'package:blogr/controllers/phone_menu_controller.dart';
 import 'package:blogr/core/colors.dart';
 import 'package:blogr/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,12 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  _initControllers();
   runApp(const Main());
+}
+
+void _initControllers() {
+  Get.put(PhoneMenuController(), permanent: true);
 }
 
 class Main extends StatelessWidget {
