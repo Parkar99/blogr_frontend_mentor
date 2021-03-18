@@ -4,6 +4,7 @@ import "dart:html";
 import "package:blogr/controllers/phone_menu_controller.dart";
 import "package:blogr/core/colors.dart";
 import "package:blogr/pages/home_page.dart";
+import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 import "package:flutter/scheduler.dart";
 import "package:get/get.dart";
@@ -13,7 +14,10 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   _initControllers();
-  Get.find<PhoneMenuController>().toggleMenu();
+
+  if (kDebugMode) {
+    Get.find<PhoneMenuController>().toggleMenu();
+  }
 
   runApp(const Main());
 }
