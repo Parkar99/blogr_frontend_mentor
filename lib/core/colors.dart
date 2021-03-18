@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 
 class GradientColors {
   /// Intro/CTA mobile nav

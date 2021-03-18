@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import "package:blogr/core/content.dart";
+import "package:flutter/material.dart";
+import "package:get/get.dart";
 
 class PhoneHeaderContent extends StatelessWidget {
   const PhoneHeaderContent({
@@ -11,14 +12,14 @@ class PhoneHeaderContent extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "A modern publishing platform",
+          headline,
           style: Get.context?.textTheme.headline1,
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 30),
         Text(
-          "Grow your audience and build your online brand",
-          style: Get.context?.textTheme.headline2,
+          subHeadline,
+          style: Get.context?.textTheme.headline3,
           textAlign: TextAlign.center,
         ),
       ],

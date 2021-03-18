@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import "package:blogr/core/content.dart";
+import "package:flutter/material.dart";
 
 class PhoneHeaderButtons extends StatelessWidget {
   const PhoneHeaderButtons({
@@ -12,11 +13,11 @@ class PhoneHeaderButtons extends StatelessWidget {
       children: [
         ElevatedButton(
           onPressed: () {},
-          child: const Text('Start for Free'),
+          child: const Text(primaryCtaText),
         ),
         OutlinedButton(
           onPressed: () {},
-          child: const Text('Learn More'),
+          child: const Text(secondaryCtaText),
         ),
       ],
     );
